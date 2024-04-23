@@ -2,22 +2,22 @@ import os, time
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "")
-    API_HASH  = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID    = os.environ.get("API_ID", "23898744")
+    API_HASH  = os.environ.get("API_HASH", "0b13c810c80b548604650cbe3c3db0c3")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "6912498692:AAH0lO6ul6FdyrOG0Nh6uzKsImhFwZrGZWI") 
    
     # database config
     DB_NAME = os.environ.get("DB_NAME","Rohesh")     
-    DB_URL  = os.environ.get("DB_URL","")
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://filmyrohesh51:19SmDYqC1N5DqLkD@cluster0.jogzc68.mongodb.net/?retryWrites=true&w=majority")
  
     # other configs
     BOT_UPTIME  = time.time()
-    START_PIC   = os.environ.get("START_PIC", "https://graph.org/file/0805983ea8c297831371f.jpg")
+    START_PIC   = os.environ.get("START_PIC", "")
     ADMIN = int(os.environ.get("ADMIN", "5698613889"))
 
     # channels logs
     FORCE_SUB   = os.environ.get("FORCE_SUB", "Rohesh_Bots") 
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002077680328"))
 
     # wes response configuration     
     WEBHOOK = bool(os.environ.get("WEBHOOK", True))
